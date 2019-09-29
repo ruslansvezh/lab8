@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+	int a,b,c;
+	cout << "Введите A,C,B: " << endl;
+	cin >> a >> b>>c;
+	if (a > b && b > c || b > a && a > c)
+		cout << "Наибольшая сумма: " << a + b;
+	else if (c > b && a > b)
+		cout <<"Наибольшая сумма: "<< c + a;
+	else if (b > a && c > b)
+		cout << "Наибольшая сумма: " << b + c;
+}   
+
