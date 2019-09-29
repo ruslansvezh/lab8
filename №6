@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+	int a, i = 0;
+	cout << "Введите число А>=1 и <=999: " << endl;
+	cin >> a;
+
+	if (a < 1 || a>999) {
+		cout << "Введены неверные данные ";
+	}
+	else
+	{
+		if (a % 2 == 0)
+			cout << "Четное ";
+		else
+			cout << "Нечетное ";
+		if (a - 100 >= 0)
+			cout << "трехзначное";
+		else if (a - 10 >= 0)
+			cout << "двузначное";
+		else
+			cout << "однозначное";
+	}
+}   
