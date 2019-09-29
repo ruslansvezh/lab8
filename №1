@@ -1,0 +1,29 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+	int a,b,max;
+	cout << "Введите A и B: " << endl;
+	cin >> a >> b;
+	if (a != b && a > b)
+	{
+		max = a;
+		b = max;
+		cout << "A=" << a << "B=" << b;
+	}	
+	else if (a != b && b > a)
+	{
+		max = b;
+		a = max;
+		cout << "A=" << a << "B=" << b;
+	}
+	else if (a == b)
+	{
+		a = 0;
+		b = 0;
+		cout << "A=" << a << endl; 
+		cout<< "B=" << b;
+	}	
+}   
