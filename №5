@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+	int a;
+	cout << "Введите число А: " << endl;
+	cin >> a;
+	if (a > 0 && a % 2 == 0)
+		cout << "Число А четное положительное ";
+	else if (a < 0 && a % 2 == 0)
+		cout << "Число А четное отрицательное ";
+	else if (a > 0 && a % 2 != 0)
+		cout << " Число А нечетное положительное";
+	else if (a < 0 && a % 2 != 0)
+		cout << " Число А нечетное отрицательное";
+	else if (a == 0)
+		cout << "Число А нулевое";
+}   
