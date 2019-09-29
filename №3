@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+	int a,b,c;
+	cout << "Введите координаты точек A,C,B: " << endl;
+	cin >> a >> b>>c;
+	if (abs(a - b) > abs(a - c))
+	{
+		cout << "Самая ближняя точка С с координатами" << c<<endl;
+		cout << "Её расстояние от точки А= " << abs(a - c);
+	}
+	else if (abs(a - b) < abs(a - c))
+	{
+		cout << "Самая ближняя точка B с координатами" << b<<endl; 
+	    cout<< "Её расстояние от точки А= " << abs(a - b);
+     }
+}   
