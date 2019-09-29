@@ -1,0 +1,18 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+	double x, y;
+	cout << "Введите координаты точки: X и Y " << endl;
+	cin >> x >> y;
+	if (x > 0 && y > 0)
+		cout << " Точка лежит в 1ой четверти";
+	else if ( x<0 && y>0)
+		cout << " Точка лежит вo 2ой четверти";
+	else if ( x<0 && y<0)
+		cout << " Точка лежит в 3eй четверти";
+	else if( x>0 && y<0)
+		cout << " Точка лежит в 4ой четверти";
+}  
